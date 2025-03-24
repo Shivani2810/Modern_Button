@@ -1,0 +1,277 @@
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column; /* Stack vertically */
+            justify-content: center;
+            align-items: center;
+            gap: 100px; /* Space between buttons */
+        }
+
+        /* Animated Button (Tina) */
+        .btn {
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(233, 123, 123);
+            padding: 0.8rem 2.3rem;
+            color: white;
+            font-size: 18px;
+            box-shadow: 5px 5px 5px 0px bisque;
+            animation-name: tina;
+            animation-duration: 3s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-direction: alternate-reverse;
+
+        }
+
+        /* @keyframes tina {
+            0% { width: 145px; background-color: orange; }
+            45% { width: 20%; background-color: rgb(99, 72, 121); }
+            65% { width: 30%; background-color: rgb(52, 165, 156); }
+            100% { width: 90%; background-color: rgb(230, 61, 69); }
+        } */
+
+
+        /* @keyframes tina {
+            0% { 
+              width: 145px; 
+              background: orange;
+              transform: translateX(0); 
+            }
+            45% { 
+              width: 20%; 
+              background: rgb(99, 72, 121);
+              transform: translateY(50px); 
+            }
+            65% { 
+              width: 30%; 
+              background: rgb(52, 165, 156);
+              transform: translateY(-20px); 
+            }
+            100% { 
+              width: 40%; 
+              background: rgb(230, 61, 69);
+              transform: translateX(0); 
+            }
+          } */
+
+
+          /* @keyframes tina {
+            0% { 
+              width: 145px; 
+              background: orange;
+              transform: scale(1); 
+            }
+            50% { 
+              width: 30%; 
+              background: rgb(52, 165, 156);
+              transform: scale(1.1); 
+            }
+            100% { 
+              width: 40%; 
+              background: rgb(230, 61, 69);
+              transform: scale(1); 
+            }
+          } */
+
+          /* @keyframes tina {
+            0% { 
+              width: 145px; 
+              background: orange;
+              transform: rotate(0deg); 
+            }
+            100% { 
+              width: 40%; 
+              background: rgb(230, 61, 69);
+              transform: rotate(360deg); 
+            }
+          } */
+
+          @keyframes tina {
+            0% { 
+              width: 145px; 
+              background: orange;
+              box-shadow: 0 0 5px orange; 
+            }
+            100% { 
+              width: 40%; 
+              background: rgb(230, 61, 69);
+              box-shadow: 0 0 20px red; 
+            }
+          }
+
+          @keyframes tina {
+            0% { 
+              width: 145px;
+              background: orange;
+              transform: translateX(0) scale(1);
+            }
+            50% { 
+              width: 25%;
+              background: rgb(52, 165, 156);
+              transform: translateX(30px) scale(1.1);
+            }
+            100% { 
+              width: 40%;
+              background: rgb(230, 61, 69);
+              transform: translateX(0) scale(1);
+            }
+          }
+          @keyframes tina {
+            0% { 
+              width: 145px;
+              background: orange;
+              transform: perspective(500px) rotateY(0deg);
+            }
+            50% { 
+              width: 30%;
+              background: rgb(52, 165, 156);
+              transform: perspective(500px) rotateY(180deg);
+            }
+            100% { 
+              width: 40%;
+              background: rgb(230, 61, 69);
+              transform: perspective(500px) rotateY(360deg);
+            }
+          }
+          @keyframes tina {
+            0% { 
+              width: 145px;
+              background: linear-gradient(90deg, orange, pink);
+            }
+            50% { 
+              width: 30%;
+              background: linear-gradient(90deg, rgb(52, 165, 156), purple);
+            }
+            100% { 
+              width: 40%;
+              background: linear-gradient(90deg, rgb(230, 61, 69), yellow);
+            }
+          }
+
+          @keyframes tina {
+            0%, 100% { 
+              width: 145px;
+              background: orange;
+              transform: translateY(0) scale(1, 1);
+            }
+            30% { 
+              width: 25%;
+              background: rgb(99, 72, 121);
+              transform: translateY(-30px) scale(1.2, 0.8);
+            }
+            60% { 
+              width: 35%;
+              background: rgb(52, 165, 156);
+              transform: translateY(0) scale(1, 1);
+            }
+          }
+          @keyframes tina {
+            0% { 
+              width: 145px;
+              background: black;
+              box-shadow: 0 0 5px orange, 0 0 10px orange;
+            }
+            50% { 
+              width: 30%;
+              box-shadow: 0 0 20px cyan, 0 0 30px cyan;
+            }
+            100% { 
+              width: 40%;
+              box-shadow: 0 0 10px red, 0 0 20px red;
+            }
+          }
+          @keyframes tina {
+            0% { 
+              width: 145px;
+              background: orange;
+              border-radius: 5px;
+            }
+            50% { 
+              width: 30%;
+              background: rgb(52, 165, 156);
+              border-radius: 50%;
+            }
+            100% { 
+              width: 40%;
+              background: rgb(230, 61, 69);
+              border-radius: 15px;
+            }
+          }
+          @keyframes tina {
+            0% { 
+              width: 145px;
+              color: white;
+              background: orange;
+            }
+            50% { 
+              width: 30%;
+              color: black;
+              background: rgb(52, 165, 156);
+            }
+            100% { 
+              width: 40%;
+              color: yellow;
+              background: rgb(230, 61, 69);
+            }
+          }
+          @keyframes tina {
+            0% { 
+              width: 145px;
+              transform: skewX(0deg);
+            }
+            50% { 
+              width: 30%;
+              transform: skewX(20deg);
+            }
+            100% { 
+              width: 40%;
+              transform: skewX(-10deg);
+            }
+          }
+          @keyframes tina {
+            0%, 100% { 
+              width: 145px;
+              opacity: 1;
+            }
+            25%, 75% { 
+              width: 30%;
+              opacity: 0.7;
+            }
+            50% { 
+              width: 35%;
+              opacity: 0.3;
+            }
+          }
+
+        /* Hover Button */
+        .button {
+            height: 60px;
+            width: 200px;
+            background-color: rgb(20, 8, 10);
+            color: #f1ecec;
+            box-shadow: 2px 2px 2px red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 1s ease-in;
+        }
+
+        .button:hover {
+            background-color: rgb(128, 16, 85);
+            border: 2px solid rgb(167, 59, 77);
+            transform: scale(1.5) rotate(360deg);
+            border-radius: 10px;
+        }
+    
